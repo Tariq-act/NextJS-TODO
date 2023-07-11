@@ -13,6 +13,6 @@
 - DaisyUI
 
 ## Backend
-For Use Json-server was use for fake backend.
-And For **CRUD** Operation perform
+For backend using Json-server it's a fake backend.
+That use For **CRUD** Operation perform
 
