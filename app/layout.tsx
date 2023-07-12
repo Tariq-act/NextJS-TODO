@@ -1,8 +1,8 @@
-'use client';
+
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { useState } from 'react';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,17 +16,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [changeTheme, setChangeTheme] = useState(false);
+
 
   return (
-    <html lang='en' data-theme={`${changeTheme ? 'dark' : 'light'}`}>
+    <html lang='en' data-theme={'light'}>
       <body suppressHydrationWarning={true} className={inter.className}>
-        <button
-          className='btn absolute right-5 top-5'
-          onClick={() => setChangeTheme(!changeTheme)}
-        >{`${changeTheme ? 'light' : 'dark'}`}</button>
         {children}
       </body>
-    </html>
+    </html >
   );
 }
